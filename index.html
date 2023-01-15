@@ -12,5 +12,13 @@
         <button id="passPara1" class="passFnt" onclick="copyonclick1()"></button>
         <button id="passPara2" class="passFnt"  onclick="copyonclick2()"></button>
         <script src="index.js"></script>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le9KPsjAAAAAPFnwbkp-m9PbL5zpk9dAQjcOIiD"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Le9KPsjAAAAAPFnwbkp-m9PbL5zpk9dAQjcOIiD', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
     </body>
 </html>
