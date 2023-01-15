@@ -101,6 +101,7 @@ top: 396px;
 
 background: #273549;
 border-radius: 6px;
+user-select: all;
 }
 #passPara2{
    position: absolute;
@@ -111,6 +112,7 @@ top: 396px;
 
 background: #273549;
 border-radius: 6px;
+user-select: all;
 }
 .passFnt{
     font-family: 'Inter';
@@ -140,3 +142,17 @@ color: #55F991;
     color: #3e8e41;
     background-color: #FFFFFF;
   }
+
+  #copybtn {
+    
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 490px;
+    
+    background: #273549;
+    border-radius: 6px;
+    
+  }
+
