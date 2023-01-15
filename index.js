@@ -4,8 +4,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 let passPara1El = document.getElementById("passPara1");
 let passPara2El = document.getElementById("passPara2");
 
-let finalPass1 = 0;
-let finalPass2 = 0;
+
 
 function gnrPass(){
     let randomPassIndex1 = Math.floor(Math.random()*characters.length);
@@ -42,8 +41,8 @@ function gnrPass(){
     let randomPasswoed15 = characters[randomPassIndex15];
     
     let randomFPass = randomPasswoed1 + randomPasswoed2 + randomPasswoed3 + randomPasswoed4 + randomPasswoed5 + randomPasswoed6 + randomPasswoed7 + randomPasswoed8 + randomPasswoed9 + randomPasswoed10 + randomPasswoed11 + randomPasswoed12 + randomPasswoed13 + randomPasswoed14 + randomPasswoed15; 
-     finalPass1 = randomFPass
-    passPara1El.textContent = finalPass1;
+    
+    passPara1El.textContent = randomFPass;
     
     //lineebreakkk
     
@@ -81,22 +80,16 @@ function gnrPass(){
     let r1andomPasswoed15 = characters[r1andomPassIndex15];
     
     let randomFPass2 = r1andomPasswoed1 + r1andomPasswoed2 + r1andomPasswoed3 + r1andomPasswoed4 + r1andomPasswoed5 + r1andomPasswoed6 + r1andomPasswoed7 + r1andomPasswoed8 + r1andomPasswoed9 + r1andomPasswoed10 + r1andomPasswoed11 + r1andomPasswoed12 + r1andomPasswoed13 + r1andomPasswoed14 + r1andomPasswoed15 ;
-     finalPass2 = randomFPass2
-    passPara2El.textContent = finalPass2;
+     
+    passPara2El.textContent = randomFPass2;
    
     
 }
 
+
 function copyonclick1(){
-    finalPass1.select();
-    navigator.clipboard.writeText(finalPass1.value);
-    //alert("Copied the text: " + finalPass1.value);
+    document.execCommand("copy")
 }
 function copyonclick2(){
-    finalPass2.select();
-    navigator.clipboard.writeText(finalPass2.value);
-    //alert("Copied the text: " + finalPass2.value);
-    
+   document.execCommand("copy")
 }
-
-
